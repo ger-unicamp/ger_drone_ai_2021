@@ -47,6 +47,8 @@
      <Compile Include="Assets\Water Float\Demo\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
      <Compile Include="Assets\Water Float\Demo\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
      <Compile Include="Assets\Water Float\Demo\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\Scripts\RegionTag.cs" />
+     <Compile Include="Assets\Scripts\RegionRandomizer.cs" />
      <None Include="Assets\Water Float\Demo\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Water Float\Demo\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Water Float\Demo\Standard Assets\Effects\Projectors\Guidelines.txt" />
