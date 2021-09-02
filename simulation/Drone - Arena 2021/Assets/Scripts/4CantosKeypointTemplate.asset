@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a7d6f1a40c45a2981a6291f0d03337, type: 3}
+  m_Name: KeypointTemplate
+  m_EditorClassIdentifier: 
+  templateID: fe55ad66-4f4e-4266-96e0-0d97c7eaa1fd
+  templateName: BaseTemplate
+  jointTexture: {fileID: 0}
+  skeletonTexture: {fileID: 0}
+  keypoints:
+  - label: Canto1
+    associateToRig: 0
+    rigLabel: 55
+    color: {r: 0, g: 1, b: 0.12042332, a: 1}
+  - label: Canto2
+    associateToRig: 0
+    rigLabel: 53
+    color: {r: 0, g: 0.14352083, b: 1, a: 1}
+  - label: Canto3
+    associateToRig: 0
+    rigLabel: 52
+    color: {r: 1, g: 0, b: 0.88550186, a: 1}
+  - label: Canto4
+    associateToRig: 0
+    rigLabel: 51
+    color: {r: 0.80784315, g: 0.8980392, b: 0.16470589, a: 0.9490196}
+  skeleton:
+  - joint1: 0
+    joint2: 0
+    color: {r: 0, g: 0, b: 1, a: 1}
+  - joint1: 0
+    joint2: 1
+    color: {r: 0.5776758, g: 0, b: 1, a: 1}
+  - joint1: 1
+    joint2: 2
+    color: {r: 0.5776758, g: 0, b: 1, a: 1}
+  - joint1: 2
+    joint2: 3
+    color: {r: 0.5776758, g: 0, b: 1, a: 1}
+  - joint1: 3
+    joint2: 0
+    color: {r: 0.5776758, g: 0, b: 1, a: 1}
