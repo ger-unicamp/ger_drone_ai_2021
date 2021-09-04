@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028346, g: 0.22571373, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -403,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Labelers:
   - id: 0
+  - id: 1
   description: Perception Camera
   captureRgbImages: 1
   firstCaptureFrame: 0
@@ -419,6 +420,15 @@ MonoBehaviour:
         enabled: 1
         annotationId: f9f22e05-443f-4602-a422-ebe4ea9b55cb
         idLabelConfig: {fileID: 11400000, guid: 45349a94b3977d944bef1808bcf77846, type: 2}
+    00000001:
+      type: {class: KeypointLabeler, ns: UnityEngine.Perception.GroundTruth, asm: Unity.Perception.Runtime}
+      data:
+        enabled: 1
+        activeTemplate: {fileID: 11400000, guid: ea167d76189aef840baf5e353a5e3ae1, type: 2}
+        annotationId: 8b3ef246-daa7-4dd5-a0e8-a943f6e7f8c2
+        idLabelConfig: {fileID: 11400000, guid: 5002bce38e4c66c4b9b5cdce00279240, type: 2}
+        objectFilter: 0
+        animationPoseConfigs: []
 --- !u!1001 &803245533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1075,6 +1085,18 @@ PrefabInstance:
     - target: {fileID: 1191830727942582636, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
       propertyPath: m_Name
       value: Base inicial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820228655941941437, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
+      propertyPath: useAutoLabeling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820228655941941437, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
+      propertyPath: labels.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820228655941941437, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
+      propertyPath: autoLabelingSchemeType
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5834354579393128657, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
       propertyPath: m_RootOrder

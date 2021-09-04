@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37a7d6f1a40c45a2981a6291f0d03337, type: 3}
-  m_Name: KeypointTemplate
+  m_Name: 4CantosKeypointTemplate
   m_EditorClassIdentifier: 
   templateID: fe55ad66-4f4e-4266-96e0-0d97c7eaa1fd
   templateName: BaseTemplate
@@ -33,6 +33,10 @@ MonoBehaviour:
     associateToRig: 0
     rigLabel: 51
     color: {r: 0.80784315, g: 0.8980392, b: 0.16470589, a: 0.9490196}
+  - label: Centro
+    associateToRig: 0
+    rigLabel: 24
+    color: {r: 0.80784315, g: 0.8980392, b: 0.16470589, a: 0.9490196}
   skeleton:
   - joint1: 0
     joint2: 0
@@ -45,6 +49,9 @@ MonoBehaviour:
     color: {r: 0.5776758, g: 0, b: 1, a: 1}
   - joint1: 2
     joint2: 3
+    color: {r: 0.5776758, g: 0, b: 1, a: 1}
+  - joint1: 3
+    joint2: 0
     color: {r: 0.5776758, g: 0, b: 1, a: 1}
   - joint1: 3
     joint2: 0

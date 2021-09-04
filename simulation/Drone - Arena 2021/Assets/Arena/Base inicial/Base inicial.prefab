@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4979927164729379580}
   - component: {fileID: 280400637667103597}
   - component: {fileID: 1820228655941941437}
+  - component: {fileID: 1732172350084614923}
   m_Layer: 0
   m_Name: Base inicial
   m_TagString: Untagged
@@ -103,6 +104,22 @@ MonoBehaviour:
   - Base inicial
   useAutoLabeling: 1
   autoLabelingSchemeType: AssetNameLabelingScheme
+--- !u!114 &1732172350084614923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191830727942582636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b33f0bc2b78db642a758f07826d0dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels:
+  - base
+  useAutoLabeling: 0
+  autoLabelingSchemeType: 
 --- !u!1 &1421223826232694943
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5487594888121629699}
+  - component: {fileID: 8627791549430234673}
   m_Layer: 0
   m_Name: Canto4
   m_TagString: Untagged
@@ -133,6 +151,21 @@ Transform:
   m_Father: {fileID: 5834354579393128657}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8627791549430234673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421223826232694943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf4fa374b134b1680755f8280ae8e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  templateInformation:
+  - template: {fileID: 11400000, guid: ea167d76189aef840baf5e353a5e3ae1, type: 2}
+    label: Canto4
 --- !u!1 &2448181465817670264
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,8 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   templateInformation:
-  - template: {fileID: 11400000, guid: a29b79d8ce98945a0855b1addec08d86, type: 2}
-    label: nose
+  - template: {fileID: 11400000, guid: ea167d76189aef840baf5e353a5e3ae1, type: 2}
+    label: Canto1
 --- !u!1 &3729657643817467418
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2524692280247643910}
+  - component: {fileID: 1159724621363016446}
   m_Layer: 0
   m_Name: Centro
   m_TagString: Untagged
@@ -209,6 +243,21 @@ Transform:
   m_Father: {fileID: 5834354579393128657}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159724621363016446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729657643817467418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf4fa374b134b1680755f8280ae8e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  templateInformation:
+  - template: {fileID: 11400000, guid: ea167d76189aef840baf5e353a5e3ae1, type: 2}
+    label: Centro
 --- !u!1 &4192619798877582438
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7346120594229731374}
+  - component: {fileID: 8824400878365154480}
   m_Layer: 0
   m_Name: Canto3
   m_TagString: Untagged
@@ -239,6 +289,21 @@ Transform:
   m_Father: {fileID: 5834354579393128657}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8824400878365154480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4192619798877582438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf4fa374b134b1680755f8280ae8e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  templateInformation:
+  - template: {fileID: 11400000, guid: ea167d76189aef840baf5e353a5e3ae1, type: 2}
+    label: Canto3
 --- !u!1 &4711121111516687302
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8978191863573421118}
+  - component: {fileID: 3955597838968481007}
   m_Layer: 0
   m_Name: Canto2
   m_TagString: Untagged
@@ -269,3 +335,18 @@ Transform:
   m_Father: {fileID: 5834354579393128657}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3955597838968481007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4711121111516687302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf4fa374b134b1680755f8280ae8e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  templateInformation:
+  - template: {fileID: 11400000, guid: ea167d76189aef840baf5e353a5e3ae1, type: 2}
+    label: Canto2
