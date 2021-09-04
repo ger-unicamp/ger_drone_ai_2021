@@ -17,16 +17,7 @@ public class RegionTag : RandomizerTag
         yPosition = (yPosition * (maxY-minY)) + minY;
         zPosition = (zPosition * (maxZ-minZ)) + minZ;
 
-        //Debug all positions in one line
-        Debug.Log(xPosition + " " + yPosition + " " + zPosition); 
-
-        //Debug.Log(string.Format());
-        
-        //var transform = gameObject.GetComponent<Transform>();    
-
-        //Change father transform
-        
-
+        //Debug.Log(xPosition + " " + yPosition + " " + zPosition); 
 
         transform.localPosition = new Vector3(xPosition, yPosition, zPosition);     
     } 

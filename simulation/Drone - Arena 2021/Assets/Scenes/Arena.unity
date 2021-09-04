@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66922060905900715, guid: 73b1a52af937be743b5421efd4912f91, type: 3}
+      propertyPath: useAutoLabeling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 66922060905900715, guid: 73b1a52af937be743b5421efd4912f91, type: 3}
+      propertyPath: labels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 66922060905900715, guid: 73b1a52af937be743b5421efd4912f91, type: 3}
+      propertyPath: autoLabelingSchemeType
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1677410228872107929, guid: 73b1a52af937be743b5421efd4912f91, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -192,15 +204,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348862967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987a17d6e22f7bd4ebdc74f1bbaed120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -2
-  maxX: -5
-  minY: -55
-  maxY: -54
+  minX: -5.966
+  maxX: -2.66
+  minY: -94.82
+  maxY: -19.01
   minZ: 16.58
   maxZ: 16.58
 --- !u!1001 &401269789
@@ -339,7 +351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402050877}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -174.7, y: 51.9, z: -136.6}
+  m_LocalPosition: {x: -174.7, y: 27.6, z: -136.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -389,7 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4467405dbcbd3d64ab4363e9ae8bb813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Labelers: []
+  m_Labelers:
+  - id: 0
   description: Perception Camera
   captureRgbImages: 1
   firstCaptureFrame: 0
@@ -400,6 +413,12 @@ MonoBehaviour:
   showVisualizations: 1
   references:
     version: 1
+    00000000:
+      type: {class: BoundingBox2DLabeler, ns: UnityEngine.Perception.GroundTruth, asm: Unity.Perception.Runtime}
+      data:
+        enabled: 1
+        annotationId: f9f22e05-443f-4602-a422-ebe4ea9b55cb
+        idLabelConfig: {fileID: 11400000, guid: 45349a94b3977d944bef1808bcf77846, type: 2}
 --- !u!1001 &803245533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -407,6 +426,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1940974378}
     m_Modifications:
+    - target: {fileID: 416334405735965659, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
+      propertyPath: useAutoLabeling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416334405735965659, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
+      propertyPath: labels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 416334405735965659, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
+      propertyPath: labels.Array.data[0]
+      value: Equipamento
+      objectReference: {fileID: 0}
+    - target: {fileID: 416334405735965659, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
+      propertyPath: autoLabelingSchemeType
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5894286919395183807, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -417,15 +452,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894286919395183807, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.97
+      value: -3.09
       objectReference: {fileID: 0}
     - target: {fileID: 5894286919395183807, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -59.83
+      value: -60.7
       objectReference: {fileID: 0}
     - target: {fileID: 5894286919395183807, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.58
+      value: 16.6
       objectReference: {fileID: 0}
     - target: {fileID: 5894286919395183807, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_LocalRotation.w
@@ -541,7 +576,7 @@ GameObject:
   - component: {fileID: 945207914}
   - component: {fileID: 945207913}
   m_Layer: 0
-  m_Name: Randomizers
+  m_Name: Scenario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -561,6 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Randomizers:
   - id: 0
+  - id: 1
   constants:
     randomSeed: 539662031
     totalIterations: 100
@@ -577,21 +613,24 @@ MonoBehaviour:
         xPosition:
           collapsed: 0
           value:
-            id: 1
+            id: 2
         yPosition:
           collapsed: 0
           value:
-            id: 2
+            id: 3
         zPosition:
           collapsed: 0
           value:
-            id: 3
+            id: 4
     00000001:
-      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      type: {class: MultiChoiceRandomizer, ns: , asm: Assembly-CSharp}
       data:
-        range:
-          minimum: 0
-          maximum: 1
+        m_Enabled: 1
+        collapsed: 0
+        choice:
+          collapsed: 0
+          value:
+            id: 5
     00000002:
       type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
       data:
@@ -599,6 +638,18 @@ MonoBehaviour:
           minimum: 0
           maximum: 1
     00000003:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0
+          maximum: 1
+    00000004:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0
+          maximum: 1
+    00000005:
       type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
       data:
         range:
@@ -723,6 +774,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
       propertyPath: m_Name
       value: WaterProDaytime
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
       propertyPath: m_RootOrder

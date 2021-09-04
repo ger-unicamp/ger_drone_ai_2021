@@ -3,7 +3,97 @@ guid: 75f57769046baf74083c073e7acfe37b
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Aluminum_-_Anodized_Glossy_(Red).001
+    second: {fileID: 2100000, guid: 393d0af55cae76847a2a16c896261a0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DisplayA.001
+    second: {fileID: 2100000, guid: fec648d57ffd682418b4664d02db49d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DisplayB
+    second: {fileID: 2100000, guid: 6f2786cfa929e8142b1de6ba02ad1ea1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DisplayD
+    second: {fileID: 2100000, guid: 655783fc36d198244868236695b6c9a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DisplayD.002
+    second: {fileID: 2100000, guid: 99799478b1456024aa3487de85ab6815, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DisplayE
+    second: {fileID: 2100000, guid: 8da14a63689069a4b97330ac7ac94326, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 595a3030570031b43acb29a1de5e988c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 8ebc14f11b00bab448a6a250e9486135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: ec0f9aa943bc20a4e947a4795559293e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 6c2e57a961ace254a8393e558cd14c9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_-_Enamel_Glossy_(Blue).003
+    second: {fileID: 2100000, guid: 7017f5387b98a9d46b2b5fbcfc8e088d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_-_Enamel_Glossy_(Green).001
+    second: {fileID: 2100000, guid: e4a4e92fd21ccf04bbdb18f430d0c708, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_-_Enamel_Glossy_(White)
+    second: {fileID: 2100000, guid: cabe06e244a24a844a7dbdcac7d0cf24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint_-_Enamel_Glossy_(Yellow).003
+    second: {fileID: 2100000, guid: 2797ea6077492d24197caaf7ae593210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Panel1
+    second: {fileID: 2100000, guid: 962bb5e61ef3d874b9cfb7505a7419f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic_-_Glossy_(Yellow)
+    second: {fileID: 2100000, guid: 6058f695abb4b8245929c035a8e1c7fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel_-_Satin
+    second: {fileID: 2100000, guid: 6c932d41a1d85c1488fde1d3dc00b2e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WamV
+    second: {fileID: 2100000, guid: 0c67cdcee4ad27e4c93c73e2f3bfb187, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,8 +131,8 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0

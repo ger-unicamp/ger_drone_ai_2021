@@ -36,14 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
      <Compile Include="Assets\Water Float\Editor\WF_Inspector.cs" />
      <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
-     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
-     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
-     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
      <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
+     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -278,8 +278,14 @@
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.burst@1.4.6/Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="ZipUtility">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.simulation.client@0.0.10-preview.10/Editor/ZipUtility.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.render-pipelines.core@10.5.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
@@ -287,17 +293,11 @@
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.burst@1.4.6/Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.collections@0.9.0-preview.6/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="ZipUtility">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.simulation.client@0.0.10-preview.10/Editor/ZipUtility.dll</HintPath>
+    <Reference Include="unityplastic">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -656,8 +656,8 @@
     <Reference Include="UnityEditor.TestRunner">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    <Reference Include="Unity.Simulation.Client.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Simulation.Client.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
@@ -665,11 +665,11 @@
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Perception.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Perception.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -677,23 +677,14 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
@@ -716,38 +707,47 @@
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Collections">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Simulation.Capture">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Simulation.Capture.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Simulation.Core">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Simulation.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Simulation.Client.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Simulation.Client.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Perception.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Perception.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Simulation.Capture.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Simulation.Capture.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Perception.Runtime">
         <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Perception.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Editor">
-        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Simulation.Capture.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Simulation.Capture.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Simulation.Core">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.Simulation.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+        <HintPath>C:/Users/eltsu/Documents/GitHub/ger_ai/simulation/Drone - Arena 2021/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

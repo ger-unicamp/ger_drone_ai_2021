@@ -12,6 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f09f279848e42cea259348b13bce4c5, type: 3}
   m_Name: IdLabelConfig
   m_EditorClassIdentifier: 
-  m_LabelEntries: []
+  m_LabelEntries:
+  - label: Base
+    id: 1
+  - label: Equipamento
+    id: 2
+  - label: measure_gas_1_Body1.024_Body1.020
+    id: 3
+  - label: EquipamentoA
+    id: 4
+  - label: EquipamentoB
+    id: 5
+  - label: EquipamentoC
+    id: 6
+  - label: EquipamentoD
+    id: 7
+  - label: EquipamentoE
+    id: 8
   autoAssignIds: 1
   startingLabelId: 1
