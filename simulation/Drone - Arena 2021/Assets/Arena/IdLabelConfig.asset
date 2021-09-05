@@ -29,5 +29,9 @@ MonoBehaviour:
     id: 7
   - label: EquipamentoE
     id: 8
+  - label: Sensor vermelho
+    id: 9
+  - label: Sensor verde
+    id: 10
   autoAssignIds: 1
   startingLabelId: 1
