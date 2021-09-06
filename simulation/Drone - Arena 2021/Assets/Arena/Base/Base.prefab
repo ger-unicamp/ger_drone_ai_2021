@@ -277,7 +277,6 @@ GameObject:
   - component: {fileID: 5894286919395183807}
   - component: {fileID: 3954086030414603094}
   - component: {fileID: 7605699263062928203}
-  - component: {fileID: -5327756938627473508}
   - component: {fileID: 4668895068821110800}
   - component: {fileID: 9080090885269293839}
   m_Layer: 0
@@ -357,22 +356,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-5327756938627473508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7770238500376464739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b33f0bc2b78db642a758f07826d0dd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  labels:
-  - Base
-  useAutoLabeling: 1
-  autoLabelingSchemeType: AssetNameLabelingScheme
 --- !u!114 &4668895068821110800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,6 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - base
+  - Base
   useAutoLabeling: 0
   autoLabelingSchemeType: 
 --- !u!114 &394958581635020664
@@ -497,6 +481,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5894286919395183807}
     m_Modifications:
+    - target: {fileID: -6894172850995480711, guid: dae588828cf3ed841a4f691c47cdb9ff, type: 3}
+      propertyPath: useAutoLabeling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6894172850995480711, guid: dae588828cf3ed841a4f691c47cdb9ff, type: 3}
+      propertyPath: labels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6894172850995480711, guid: dae588828cf3ed841a4f691c47cdb9ff, type: 3}
+      propertyPath: autoLabelingSchemeType
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8689862816534387821, guid: dae588828cf3ed841a4f691c47cdb9ff, type: 3}
       propertyPath: m_Name
       value: Mostrador 1

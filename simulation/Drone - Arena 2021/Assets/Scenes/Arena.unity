@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028346, g: 0.22571373, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.17757854, g: 0.22232199, b: 0.3045175, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -251,7 +251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9054955597081479542, guid: a3a28542d73dcd14f9d727150f620cfb, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9054955597081479542, guid: a3a28542d73dcd14f9d727150f620cfb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -374,7 +374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402050877}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -174.7, y: 27.6, z: -136.8}
+  m_LocalPosition: {x: -94.29, y: 36.47, z: -105.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -428,7 +428,7 @@ MonoBehaviour:
   - id: 0
   - id: 1
   description: Perception Camera
-  captureRgbImages: 1
+  captureRgbImages: 0
   firstCaptureFrame: 0
   captureTriggerMode: 0
   manualSensorAffectSimulationTiming: 0
@@ -452,6 +452,27 @@ MonoBehaviour:
         idLabelConfig: {fileID: 11400000, guid: 5002bce38e4c66c4b9b5cdce00279240, type: 2}
         objectFilter: 0
         animationPoseConfigs: []
+--- !u!1 &493421835 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4849348025015833965, guid: a3a28542d73dcd14f9d727150f620cfb, type: 3}
+  m_PrefabInstance: {fileID: 401269789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &493421838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493421835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b33f0bc2b78db642a758f07826d0dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels:
+  - base
+  useAutoLabeling: 0
+  autoLabelingSchemeType: 
 --- !u!1001 &803245533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -527,8 +548,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
+--- !u!1 &825144134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1191830727942582636, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
+  m_PrefabInstance: {fileID: 1483024853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &825144135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825144134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b33f0bc2b78db642a758f07826d0dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels:
+  - base inicial
+  useAutoLabeling: 0
+  autoLabelingSchemeType: 
 --- !u!1001 &894674893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,6 +679,7 @@ MonoBehaviour:
   - id: 1
   - id: 2
   - id: 3
+  - id: 4
   constants:
     randomSeed: 539662031
     totalIterations: 100
@@ -652,15 +696,15 @@ MonoBehaviour:
         xPosition:
           collapsed: 0
           value:
-            id: 4
+            id: 5
         yPosition:
           collapsed: 0
           value:
-            id: 5
+            id: 6
         zPosition:
           collapsed: 0
           value:
-            id: 6
+            id: 7
     00000001:
       type: {class: MostradorRandomizer, ns: , asm: Assembly-CSharp}
       data:
@@ -669,24 +713,24 @@ MonoBehaviour:
         digit1:
           collapsed: 0
           value:
-            id: 7
+            id: 8
         digit2:
           collapsed: 0
           value:
-            id: 8
+            id: 9
         digit3:
           collapsed: 0
           value:
-            id: 9
+            id: 10
         minus:
           collapsed: 0
           value:
-            id: 10
+            id: 11
           threshold: 0.5
         one:
           collapsed: 0
           value:
-            id: 11
+            id: 12
           threshold: 0.5
     00000002:
       type: {class: MultiChoiceRandomizer, ns: , asm: Assembly-CSharp}
@@ -696,7 +740,7 @@ MonoBehaviour:
         choice:
           collapsed: 0
           value:
-            id: 12
+            id: 13
     00000003:
       type: {class: AnguloRandomizer, ns: , asm: Assembly-CSharp}
       data:
@@ -705,21 +749,34 @@ MonoBehaviour:
         xRotation:
           collapsed: 0
           value:
-            id: 13
+            id: 14
         yRotation:
           collapsed: 0
           value:
-            id: 14
+            id: 15
         zRotation:
           collapsed: 0
           value:
-            id: 15
+            id: 16
     00000004:
-      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      type: {class: LuzRandomizer, ns: , asm: Assembly-CSharp}
       data:
-        range:
-          minimum: 0
-          maximum: 1
+        m_Enabled: 1
+        collapsed: 0
+        lightIntensityParameter:
+          collapsed: 0
+          value:
+            id: 17
+        lightColorParameter:
+          collapsed: 0
+          red:
+            id: 18
+          green:
+            id: 19
+          blue:
+            id: 20
+          alpha:
+            id: 21
     00000005:
       type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
       data:
@@ -737,7 +794,7 @@ MonoBehaviour:
       data:
         range:
           minimum: 0
-          maximum: 9
+          maximum: 1
     00000008:
       type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
       data:
@@ -755,7 +812,7 @@ MonoBehaviour:
       data:
         range:
           minimum: 0
-          maximum: 1
+          maximum: 9
     0000000B:
       type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
       data:
@@ -786,6 +843,40 @@ MonoBehaviour:
         range:
           minimum: 0
           maximum: 1
+    00000010:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0
+          maximum: 1
+    00000011:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0
+          maximum: 1
+    00000012:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0.8
+          maximum: 1
+    00000013:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0.8
+          maximum: 1
+    00000014:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0.8
+          maximum: 1
+    00000015:
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        value: 1
 --- !u!4 &945207914
 Transform:
   m_ObjectHideFlags: 0
@@ -857,6 +948,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35976a3b2b8d511469f256f2ed1a02f8, type: 3}
+--- !u!1 &1055019053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4945931226398384074, guid: d6ad6074d0aaad14ca551e69acb17e99, type: 3}
+  m_PrefabInstance: {fileID: 894674893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1055019056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055019053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b33f0bc2b78db642a758f07826d0dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels:
+  - base
+  useAutoLabeling: 0
+  autoLabelingSchemeType: 
 --- !u!1 &1073452220
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +1076,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111988721}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987a17d6e22f7bd4ebdc74f1bbaed120, type: 3}
   m_Name: 
@@ -1062,6 +1174,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1360918836}
   - component: {fileID: 1360918835}
+  - component: {fileID: 1360918838}
+  - component: {fileID: 1360918837}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1138,13 +1252,43 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360918834}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.12940955, y: 0.8365163, z: -0.48296294, w: 0.22414392}
   m_LocalPosition: {x: 0, y: 8.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 150, z: 0}
+--- !u!114 &1360918837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360918834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6144b75cfbfe24f84c889ec429f4f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 60
+  maxX: 120
+  minY: 30
+  maxY: 150
+  minZ: 0
+  maxZ: 0
+--- !u!114 &1360918838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360918834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b7b4c0415b6fc488c5aeb6872701f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1367803079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1224,7 +1368,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1820228655941941437, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
       propertyPath: labels.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820228655941941437, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
+      propertyPath: labels.Array.data[0]
+      value: base inicial
       objectReference: {fileID: 0}
     - target: {fileID: 1820228655941941437, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
       propertyPath: autoLabelingSchemeType
@@ -1274,7 +1422,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1732172350084614923, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8410db96f843c914f9615f8eaef482b9, type: 3}
 --- !u!1001 &1560050054
 PrefabInstance:
@@ -1340,9 +1489,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1370531452}
     m_Modifications:
+    - target: {fileID: 2462101966728415792, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894286919395183807, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5894286919395183807, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_LocalScale.z
@@ -1391,6 +1544,10 @@ PrefabInstance:
     - target: {fileID: 7770238500376464739, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_Name
       value: Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250443038460131756, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}

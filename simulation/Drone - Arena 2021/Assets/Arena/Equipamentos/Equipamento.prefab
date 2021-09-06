@@ -141,5 +141,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - Equipamento
+  - Qrcode
   useAutoLabeling: 0
   autoLabelingSchemeType: 

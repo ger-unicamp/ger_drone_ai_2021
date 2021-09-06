@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: LabelConfig
   m_EditorClassIdentifier: 
   m_LabelEntries:
+  - label: base inicial
+    id: 1
   - label: base
-    id: 0
+    id: 2
+  - label: Qrcode
+    id: 3
+  - label: mostrador
+    id: 4
+  - label: Sensores
+    id: 5
   autoAssignIds: 1
   startingLabelId: 1
