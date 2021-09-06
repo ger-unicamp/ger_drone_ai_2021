@@ -1431,5 +1431,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fundo
       objectReference: {fileID: 0}
+    - target: {fileID: 5888446859586394657, guid: 391ce7753723f5348a372ee16713e6b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391ce7753723f5348a372ee16713e6b8, type: 3}

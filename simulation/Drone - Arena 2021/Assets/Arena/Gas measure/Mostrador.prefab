@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   labels:
-  - measure_gas_1_Body1.024_Body1.020
+  - Mostrador
   useAutoLabeling: 1
   autoLabelingSchemeType: AssetNameLabelingScheme
 --- !u!114 &2304017595183916373

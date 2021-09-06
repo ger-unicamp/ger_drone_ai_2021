@@ -33,5 +33,7 @@ MonoBehaviour:
     id: 9
   - label: Sensor verde
     id: 10
-  autoAssignIds: 1
+  - label: Mostrador
+    id: 11
+  autoAssignIds: 0
   startingLabelId: 1
