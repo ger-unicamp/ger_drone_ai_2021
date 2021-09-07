@@ -10,18 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f09f279848e42cea259348b13bce4c5, type: 3}
-  m_Name: LabelConfig
+  m_Name: IdLabelConfig
   m_EditorClassIdentifier: 
   m_LabelEntries:
-  - label: base inicial
+  - label: Base
     id: 1
-  - label: base
+  - label: Equipamento
     id: 2
-  - label: Qrcode
+  - label: measure_gas_1_Body1.024_Body1.020
     id: 3
-  - label: mostrador
+  - label: EquipamentoA
     id: 4
-  - label: Sensores
+  - label: EquipamentoB
     id: 5
-  autoAssignIds: 1
+  - label: EquipamentoC
+    id: 6
+  - label: EquipamentoD
+    id: 7
+  - label: EquipamentoE
+    id: 8
+  - label: Sensor vermelho
+    id: 9
+  - label: Sensor verde
+    id: 10
+  - label: Mostrador
+    id: 11
+  autoAssignIds: 0
   startingLabelId: 1

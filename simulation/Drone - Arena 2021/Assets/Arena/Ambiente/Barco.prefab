@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1677410228872107929}
   - component: {fileID: 3633348663706014599}
+  - component: {fileID: -6744450956707911873}
   m_Layer: 0
   m_Name: Barco
   m_TagString: Untagged
@@ -49,8 +50,26 @@ MonoBehaviour:
   maxX: -75
   minY: -15
   maxY: 15
-  minZ: -15
-  maxZ: 15
+  minZ: 0
+  maxZ: 360
+--- !u!114 &-6744450956707911873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763616772194924294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987a17d6e22f7bd4ebdc74f1bbaed120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -168.95
+  maxX: -83.95
+  minY: 19.2
+  maxY: 19.5
+  minZ: -174
+  maxZ: -115
 --- !u!1 &6184231203053264378
 GameObject:
   m_ObjectHideFlags: 0

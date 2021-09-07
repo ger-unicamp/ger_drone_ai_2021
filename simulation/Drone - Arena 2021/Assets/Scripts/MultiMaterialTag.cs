@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityEngine.Perception.Randomization.Randomizers;
 using UnityEngine.Perception.GroundTruth;
 
-[AddComponentMenu("Perception/RandomizerTags/MultiMaterialTag")]
+[AddComponentMenu("Drone/RandomizerTags/MultiMaterialTag")]
 public class MultiMaterialTag : MultipleChoiceTag
 {
     [SerializeField] Material[] materials;
     [SerializeField] string[] labels;
     [SerializeField] IdLabelConfig labelConfig;
 
+    #pragma warning disable 108
     MeshRenderer renderer;
     Labeling labeling;
     

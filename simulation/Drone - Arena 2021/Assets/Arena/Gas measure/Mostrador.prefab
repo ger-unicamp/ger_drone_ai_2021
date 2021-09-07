@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4270090321699179067}
-  - component: {fileID: 35161605160216695}
   - component: {fileID: 7602531109628998591}
   m_Layer: 0
   m_Name: Canto1
@@ -32,19 +31,6 @@ Transform:
   m_Father: {fileID: 6529198169116458416}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &35161605160216695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048646759251528789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cf4fa374b134b1680755f8280ae8e7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  templateInformation: []
 --- !u!114 &7602531109628998591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +248,6 @@ GameObject:
   - component: {fileID: 2304017595183916373}
   - component: {fileID: 7195380818275385981}
   - component: {fileID: 4157415010757852981}
-  - component: {fileID: 967847029885376274}
   m_Layer: 0
   m_Name: Mostrador
   m_TagString: Untagged
@@ -362,19 +347,3 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8689862816534387821}
   m_Mesh: {fileID: -2985912654170663023, guid: 75f57769046baf74083c073e7acfe37b, type: 3}
---- !u!114 &967847029885376274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8689862816534387821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b33f0bc2b78db642a758f07826d0dd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  labels:
-  - mostrador
-  useAutoLabeling: 0
-  autoLabelingSchemeType: 

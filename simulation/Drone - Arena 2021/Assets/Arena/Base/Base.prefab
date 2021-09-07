@@ -385,7 +385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   labels:
-  - base
   - Base
   useAutoLabeling: 0
   autoLabelingSchemeType: 
@@ -495,7 +494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8689862816534387821, guid: dae588828cf3ed841a4f691c47cdb9ff, type: 3}
       propertyPath: m_Name
-      value: Mostrador 1
+      value: Mostrador
       objectReference: {fileID: 0}
     - target: {fileID: 8994941698442632998, guid: dae588828cf3ed841a4f691c47cdb9ff, type: 3}
       propertyPath: m_RootOrder

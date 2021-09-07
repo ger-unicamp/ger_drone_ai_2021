@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17757854, g: 0.22232199, b: 0.3045175, a: 1}
+  m_IndirectSpecularColor: {r: 0.17757884, g: 0.2223225, b: 0.30451843, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -192,29 +192,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73b1a52af937be743b5421efd4912f91, type: 3}
---- !u!1 &226050180 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1763616772194924294, guid: 73b1a52af937be743b5421efd4912f91, type: 3}
-  m_PrefabInstance: {fileID: 226050179}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &226050181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226050180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec6144b75cfbfe24f84c889ec429f4f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minX: -105
-  maxX: -75
-  minY: -15
-  maxY: 15
-  minZ: 0
-  maxZ: 360
 --- !u!1 &348862967 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7770238500376464739, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
@@ -374,7 +351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402050877}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -94.29, y: 36.47, z: -105.02}
+  m_LocalPosition: {x: -94, y: 44, z: -105.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -428,7 +405,7 @@ MonoBehaviour:
   - id: 0
   - id: 1
   description: Perception Camera
-  captureRgbImages: 0
+  captureRgbImages: 1
   firstCaptureFrame: 0
   captureTriggerMode: 0
   manualSensorAffectSimulationTiming: 0
@@ -442,14 +419,14 @@ MonoBehaviour:
       data:
         enabled: 1
         annotationId: f9f22e05-443f-4602-a422-ebe4ea9b55cb
-        idLabelConfig: {fileID: 11400000, guid: 45349a94b3977d944bef1808bcf77846, type: 2}
+        idLabelConfig: {fileID: 11400000, guid: 63d8fecaa83eb484ca18a6d93b1cae10, type: 2}
     00000001:
       type: {class: KeypointLabeler, ns: UnityEngine.Perception.GroundTruth, asm: Unity.Perception.Runtime}
       data:
         enabled: 1
         activeTemplate: {fileID: 11400000, guid: ea167d76189aef840baf5e353a5e3ae1, type: 2}
         annotationId: 8b3ef246-daa7-4dd5-a0e8-a943f6e7f8c2
-        idLabelConfig: {fileID: 11400000, guid: 5002bce38e4c66c4b9b5cdce00279240, type: 2}
+        idLabelConfig: {fileID: 11400000, guid: 63d8fecaa83eb484ca18a6d93b1cae10, type: 2}
         objectFilter: 0
         animationPoseConfigs: []
 --- !u!1 &493421835 stripped
@@ -965,8 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b33f0bc2b78db642a758f07826d0dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  labels:
-  - base
+  labels: []
   useAutoLabeling: 0
   autoLabelingSchemeType: 
 --- !u!1 &1073452220
@@ -1489,9 +1465,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1370531452}
     m_Modifications:
+    - target: {fileID: 416334405735965659, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
+      propertyPath: labels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2462101966728415792, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5894286919395183807, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_RootOrder
@@ -1547,7 +1527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8250443038460131756, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab12c561e0e8a0045a68f8b04b49a062, type: 3}

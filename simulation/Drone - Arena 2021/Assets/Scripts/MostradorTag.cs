@@ -6,6 +6,7 @@ using UnityEngine.Perception.GroundTruth;
 public class MostradorTag : RandomizerTag
 {
 
+    #pragma warning disable 108
     MeshRenderer renderer;
     Labeling labeling;
     
@@ -47,6 +48,8 @@ public class MostradorTag : RandomizerTag
         renderer.material.mainTexture = sprite.texture;
         //renderer.sprite = sprite;
 
+        labeling.labels[0] = base_label+"_"+number;
+        labeling.RefreshLabeling();
     } 
 }
 
