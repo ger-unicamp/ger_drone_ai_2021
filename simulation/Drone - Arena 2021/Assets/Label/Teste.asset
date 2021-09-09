@@ -8029,5 +8029,11 @@ MonoBehaviour:
     id: 4007
   - label: Mostrador_99_9
     id: 4008
+  - label: Base_Inicial
+    id: 4009
+  - label: Sensor vermelho
+    id: 4010
+  - label: Sensor verde
+    id: 4011
   autoAssignIds: 1
   startingLabelId: 1
