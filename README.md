@@ -6,6 +6,7 @@ Os dados gerados podem ser obtidos em [Dados brutos](https://drive.google.com/dr
 - testes-exemplos: notebook executando um tutorial do TF/Keras
 - exploration: notebooks explorando os dados gerados.
 - datasets: dados de exemplo gerados na simulação anterior.  
+- Mostrador: código utilizado para gerar as texturas dos mostradores digitais.
 
 
 # Procedimentos realizados - ML e Dados sintéticos com a Unity
