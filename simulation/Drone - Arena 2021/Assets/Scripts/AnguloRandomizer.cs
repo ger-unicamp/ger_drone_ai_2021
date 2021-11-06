@@ -3,15 +3,20 @@ using UnityEngine;
 using UnityEngine.Perception.Randomization.Parameters;
 using UnityEngine.Perception.Randomization.Randomizers;
 
+/// <summary>
+/// Randomizador para randomizar o ângulo espacial de um objeto
+/// </summary>
 [Serializable]
 [AddRandomizerMenu("Perception/AnguloRandomizer")]
 public class AnguloRandomizer : Randomizer
 {
-    public FloatParameter xRotation;
-    public FloatParameter yRotation;
-    public FloatParameter zRotation;
+    [Tooltip("Distribuição da aleatorização dos ângulos em X, sempre entre 0 e 1.")] public FloatParameter xRotation;
+    [Tooltip("Distribuição da aleatorização dos ângulos em Y, sempre entre 0 e 1.")] public FloatParameter yRotation;
+    [Tooltip("Distribuição da aleatorização dos ângulos em Z, sempre entre 0 e 1.")] public FloatParameter zRotation;
 
-
+    /// <summary>
+    /// Verifica os objetos que precisam ser randomizados, e randomiza.
+    /// </summary>
     protected override void OnIterationStart()
     {
         var tags = tagManager.Query<AnguloTag>();

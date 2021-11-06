@@ -3,12 +3,20 @@ using UnityEngine;
 using UnityEngine.Perception.Randomization.Parameters;
 using UnityEngine.Perception.Randomization.Randomizers;
 
+
+/// <summary>
+/// Randomiza possíveis escolhas (ex. material ou objeto que será ativado).
+/// Os componentes randomizados devem extender "MultipleChoiceTag".
+/// </summary>
 [Serializable]
 [AddRandomizerMenu("Drone/MultipleChoice")]
 public class MultiChoiceRandomizer : Randomizer
 {
-    public FloatParameter choice;
+    [Tooltip("Distribuição para realizar as escolhas. Deve estar entre 0 e 1.")] public FloatParameter choice;
 
+    /// <summary>
+    /// Define as escolhas de todos os objetos.
+    /// </summary>
     protected override void OnIterationStart()
     {
         for(int i = 0; i<2; i++)
@@ -31,9 +39,6 @@ public class MultiChoiceRandomizer : Randomizer
                 tag.SetChoice(choice.Sample());
             }
         }
-         
-
-        
         
     }
 }

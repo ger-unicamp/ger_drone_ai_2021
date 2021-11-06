@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Perception.Randomization.Randomizers;
 
+/// <summary>
+/// Tag que deve ser componente do objeto para randomizar seu ângulo espacial 
+/// </summary>
 [AddComponentMenu("Perception/RandomizerTags/AnguloTag")]
 public class AnguloTag : RandomizerTag
 {
@@ -13,6 +16,9 @@ public class AnguloTag : RandomizerTag
     public float minZ;
     public float maxZ;
 
+    /// <summary>
+    /// Função 
+    /// </summary>
     public void SetRotation(float xRotation, float yRotation, float zRotation)  //acao chamada para cada objeto com o tag pelo "AnguloRandomizer"
     {
         xRotation = (xRotation * (maxX-minX)) + minX;   //baseado nos 3 parametros de 0 a 1 para a randomizacao, atualiza a rotacao do objeto

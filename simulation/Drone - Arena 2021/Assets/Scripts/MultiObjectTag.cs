@@ -1,30 +1,29 @@
 using UnityEngine;
 using UnityEngine.Perception.Randomization.Randomizers;
+
+/// <summary>
+/// Escolhe um objeto para ativar, e desativa os outros.
+/// </summary>
 [AddComponentMenu("Perception/RandomizerTags/MultiObjectTag")]
 public class MultiObjectTag : MultipleChoiceTag
 {
-    [SerializeField] GameObject[] objects;
+    [Tooltip("Objetos que podem ser escolhidos para ativar ou desativar.")] [SerializeField] GameObject[] objects;
 
+    /// <summary>
+    /// Desativa todos os objetos na inicialização.
+    /// </summary>
     void Start()
     {
-        foreach  (GameObject obj in objects)
-        {
-            if(obj != null)
-            {
-                obj.SetActive(false);
-            }
-        }
+        DisabelAll();
     }
-
+    
+    /// <summary>
+    /// Ativa o objeto segunda a escolha aleatória. 
+    /// </summary>
+    /// <param name="choice">Variável aleatória entre 0 e 1, indicando qual objeto será ativado.</param>
     public override void SetChoice(float choice)
     {
-        foreach  (GameObject obj in objects)
-        {
-            if(obj != null)
-            {
-                obj.SetActive(false);
-            }
-        }
+        DisabelAll();
 
         int index = float2choice(choice, objects.Length);
 
@@ -34,9 +33,20 @@ public class MultiObjectTag : MultipleChoiceTag
         {
             objchoice.SetActive(true);
         }
-
-        //Debug.Log(string.Format("{0} - {1} - {2} - {3}", choice, index, objects.Length, objects));
-
     } 
+
+    /// <summary>
+    /// Desativa todos os objetos.
+    /// </summary>
+    private void DisabelAll()
+    {
+        foreach  (GameObject obj in objects)
+        {
+            if(obj != null)
+            {
+                obj.SetActive(false);
+            }
+        }
+    }
 }
 
