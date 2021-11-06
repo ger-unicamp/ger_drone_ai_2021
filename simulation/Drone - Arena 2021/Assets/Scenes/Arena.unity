@@ -1238,7 +1238,7 @@ MonoBehaviour:
       type: {class: MultiChoiceRandomizer, ns: , asm: Assembly-CSharp}
       data:
         m_Enabled: 1
-        collapsed: 0
+        collapsed: 1
         choice:
           collapsed: 0
           value:
@@ -1247,7 +1247,7 @@ MonoBehaviour:
       type: {class: AnguloRandomizer, ns: , asm: Assembly-CSharp}
       data:
         m_Enabled: 1
-        collapsed: 0
+        collapsed: 1
         xRotation:
           collapsed: 0
           value:
@@ -1264,7 +1264,7 @@ MonoBehaviour:
       type: {class: LuzRandomizer, ns: , asm: Assembly-CSharp}
       data:
         m_Enabled: 1
-        collapsed: 0
+        collapsed: 1
         lightIntensityParameter:
           collapsed: 0
           value:
@@ -1283,7 +1283,7 @@ MonoBehaviour:
       type: {class: CameraRandomizer, ns: , asm: Assembly-CSharp}
       data:
         m_Enabled: 1
-        collapsed: 0
+        collapsed: 1
         fov:
           collapsed: 0
           value:
