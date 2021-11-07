@@ -88,7 +88,7 @@ Utilizamos um [notebook pronto](https://colab.research.google.com/drive/1HQ4S2Av
 
 Como os dados gerados pela Unity possuem uma organização própria (formato das anotações), decidimos utilizar a plataforma Roboflow para armazenar e converter os dados para a organização necessária para a YoloV5. O dataset obtido está público na plataforma: [GER-Drone-CBR-2021](https://universe.roboflow.com/ger/ger-drone-cbr-2021).
 
-## Modelo dos mostradores - TF/Keras + ONXX + PyTorch
+## Modelo dos mostradores - TF/Keras + ONNX + PyTorch
 
 Como o objetivo dessa IA era detectar o conteúdo dos mostradores digitais do Desafio Petrobrás de Robótica, os dados foram gerados na Unity com o foco neles, para tanto, a compontente RegionTag do mostrador foi removida e no MultiObjectTag foram removidos os outros 2 objetos (vazio e equipamento) de modo que o mostrador estivesse sempre na mesma posição e que ele sempre estivesse na cena, só mudando sua rotação pelo AnguloTag. 
 
@@ -100,3 +100,24 @@ Com as imagens devidamente cortadas, escaladas e separadas, foi necessário agor
 
 É possível encontrar o notebook no Drive do GER [aqui](https://drive.google.com/drive/folders/1znBMJF6yxD61mjTooBT-Mdx2_ISDHhZI) em ```mostrador.ipynb```.
 
+Apesar de a ideia inicial ser a de utilizar o modelo em TensorFlow, como a YoloV5 utilizava o PyTorch e as duas bibliotecas, no momento da competição, tinham duas versões conflitantes de uma biblioteca pré-requisito, não era possível fazê-lo. Para contornar o problema, foi feita a portabilidade do modelo de TensorFlow para [ONNX (Open Neural Network Exchange)](https://onnx.ai/) , um modelo de portabilidade das redes neurais entre si, e posteriormente para PyTorch. A conversão está explicada no notebook.
+
+Após o treinamento do modelo, também foram feitos testes com novas imagens e feita uma matriz de confusão para verificar se o modelo é aceitável. Essa etapa também está exposta com mais detalhes no notebook.
+
+> **Dicas para bom uso do Google Colab**
+> 
+>  **Uso limitado da Back-end da GPU**
+> 
+>   * Tendo em vista que o tempo de uso da Back-end da GPU das VM's do Google Colab é limitado, busque treinar o modelo em 100-200 epochs no começo, e faça o ajuste fino posteriormente após salvar esse primeiro modelo. 
+> 
+>    * Se você estiver treinando um modelo, não dê alt-tab para fora do navegador, o Colab pode simplesmente te desconectar, idealmente faça outra coisa em outra guia do navegador
+> 
+>   *   Se você estiver travado em alguma parte por querer alterar o código e não saber como, se desconecte da máquina virtual, o Colab pode te bloquear da GPU por ociosidade.
+>   
+>   * Infelizmente, se você deseja treinar o modelo, cuidado com eventuais saídas do computador, idealmente clique na tela do Colab de 5 em 5 minutos para evitar que o site considere que você está sendo ocioso.
+> 
+>   * Após uso prolongado do Colab (quase 1 hora e mais) o Google começa a te lançar alguns Captchas, esteja atento, se você demorar um pouquinho sequer para fazê-lo você será bloqueado da Back-end da GPU.
+> 
+>   * Os bloqueios da Back-end da GPU demoram entre 12 e 24 horas (em 2021), se você for bloqueado não entre em desespero.
+> a
+>   * Os bloqueios não são por IP mas sim por conta gmail, se você precisa desesperadamente acabar o modelo, logue em outra conta gmail no notebook e continue.
