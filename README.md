@@ -119,5 +119,5 @@ Após o treinamento do modelo, também foram feitos testes com novas imagens e f
 >   * Após uso prolongado do Colab (quase 1 hora e mais) o Google começa a te lançar alguns Captchas, esteja atento, se você demorar um pouquinho sequer para fazê-lo você será bloqueado da Back-end da GPU.
 > 
 >   * Os bloqueios da Back-end da GPU demoram entre 12 e 24 horas (em 2021), se você for bloqueado não entre em desespero.
-> a
+> 
 >   * Os bloqueios não são por IP mas sim por conta gmail, se você precisa desesperadamente acabar o modelo, logue em outra conta gmail no notebook e continue.
