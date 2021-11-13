@@ -2,6 +2,8 @@ import os
 import cv2 as cv
 import json
 
+# Cria as pastas para separar os dados
+
 datasets_path = "C:\\Users\\felip\\AppData\\LocalLow\\DefaultCompany\\Drone - Arena 2021\\a23123b2-1208-4cc1-a10e-ea2111941bd9"
 
 info_folder = datasets_path+"/"+"data"

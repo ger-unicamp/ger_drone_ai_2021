@@ -3,6 +3,8 @@ import json
 
 import os
 
+# Separa as imagens geradas em pastas
+
 #mude o datasets_path e alvo para se adequar à sua situação
 datasets_path = "C:\\Users\\felip\\AppData\\LocalLow\\DefaultCompany\\Drone - Arena 2021\\96bbc25e-2045-407a-a152-c425b058a9e9"
 
