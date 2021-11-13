@@ -82,7 +82,7 @@ Não realizamos o treino direto, mas sim transfer learning.
 > 
 > Técnica utilizada para treinar modelos de machine learning em que, em vez de começar o treinamento desde o início, continua a partir de um modelo pré-existente, permitindo aproveitar as features já extraídas por esse modelo. Acelera o processo de treino, podendo até congelar (impedir a alteração de pesos) de algumas camadas para isso, e pode melhorar a performance.
 
-Utilizamos um [notebook pronto](https://colab.research.google.com/drive/1HQ4S2Av5ct2wIEpYamD2z5spA962XQo4?usp=sharing) para treinar o modelo, diponibilizado pelo Roboflow.
+Utilizamos um [notebook pronto](https://colab.research.google.com/drive/1HQ4S2Av5ct2wIEpYamD2z5spA962XQo4?usp=sharing) para treinar o modelo, diponibilizado pelo Roboflow. Ele também está disponível na pasta `models`: [mostradores.ipynb](models/Treino%20YoloV5.ipynb).
 
 ### Roboflow
 
@@ -98,7 +98,7 @@ Depois de gerar o dataset e anotar os dados automaticamente pelo pacote .percept
 
 Com as imagens devidamente cortadas, escaladas e separadas, foi necessário agora fazer o upload dessa pasta no Google Drive com o intuito de realizar o treinamento no Google Colab utilizando a back-end da GPU para melhoria de performance. Para isso, foi construído um modelo em TensorFlow utilizando a [API Funcional](https://www.tensorflow.org/guide/keras/functional), que essencialmente é muito parecida com a API Sequencial, utilizada nos tutoriais do TensorFlow, mas nela uma maior personalização das camadas é possibilitada, o que era essencial tendo em vista que a IA dos mostradores deveria ter varias saídas (uma para cada dígito e uma para o sinal), caracterizando o modelo como um classificador multiclasse.
 
-É possível encontrar o notebook no Drive do GER [aqui](https://drive.google.com/drive/folders/1znBMJF6yxD61mjTooBT-Mdx2_ISDHhZI) em ```mostrador.ipynb```.
+É possível encontrar o notebook na pasta `models`: [mostradores.ipynb](models/mostradores.ipynb).
 
 Apesar de a ideia inicial ser a de utilizar o modelo em TensorFlow, como a YoloV5 utilizava o PyTorch e as duas bibliotecas, no momento da competição, tinham duas versões conflitantes de uma biblioteca pré-requisito, não era possível fazê-lo. Para contornar o problema, foi feita a portabilidade do modelo de TensorFlow para [ONNX (Open Neural Network Exchange)](https://onnx.ai/) , um modelo de portabilidade das redes neurais entre si, e posteriormente para PyTorch. A conversão está explicada no notebook.
 
