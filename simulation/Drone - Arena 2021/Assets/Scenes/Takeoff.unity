@@ -299,6 +299,110 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1822079302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3971938093151332514, guid: 84f44ee448c91604aab54adac2d4e4d2, type: 3}
+  m_PrefabInstance: {fileID: 3971938093372264093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1822079305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822079302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
+--- !u!114 &1822079306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822079302}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b46a9cfd78bc8046b19ed583111ae74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 1000
+  motors:
+  - {fileID: 1329049406265478562}
+  - {fileID: 3091512250480144517}
+  - {fileID: 8713467808511555307}
+  - {fileID: 6014195494734542462}
+  rangeMin: {x: -5, y: -1.5, z: -5}
+  rangeMax: {x: 5, y: 5, z: 5}
+  xPosition:
+    collapsed: 0
+    value:
+      id: 0
+  yPosition:
+    collapsed: 0
+    value:
+      id: 1
+  zPosition:
+    collapsed: 0
+    value:
+      id: 2
+  references:
+    version: 1
+    00000000:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0
+          maximum: 1
+    00000001:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0
+          maximum: 1
+    00000002:
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0
+          maximum: 1
+--- !u!114 &1822079307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822079302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 10
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 4
+      BranchSizes: 
+    VectorActionSize: 04000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 1
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 1
+  m_BehaviorName: Goto
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
 --- !u!1 &2146633520
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,110 +504,6 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 2697255689888072511, guid: 84f44ee448c91604aab54adac2d4e4d2, type: 3}
   m_PrefabInstance: {fileID: 3971938093372264093}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2608407589129141277 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1381976470803608192, guid: 84f44ee448c91604aab54adac2d4e4d2, type: 3}
-  m_PrefabInstance: {fileID: 3971938093372264093}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2608407589129141278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2608407589129141277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
---- !u!114 &2608407589129141279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2608407589129141277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b46a9cfd78bc8046b19ed583111ae74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 1000
-  motors:
-  - {fileID: 1329049406265478562}
-  - {fileID: 3091512250480144517}
-  - {fileID: 8713467808511555307}
-  - {fileID: 6014195494734542462}
-  rangeMin: {x: -5, y: -1.5, z: -5}
-  rangeMax: {x: 5, y: 5, z: 5}
-  xPosition:
-    collapsed: 0
-    value:
-      id: 0
-  yPosition:
-    collapsed: 0
-    value:
-      id: 1
-  zPosition:
-    collapsed: 0
-    value:
-      id: 2
-  references:
-    version: 1
-    00000000:
-      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
-      data:
-        range:
-          minimum: 0
-          maximum: 1
-    00000001:
-      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
-      data:
-        range:
-          minimum: 0
-          maximum: 1
-    00000002:
-      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers, asm: Unity.Perception.Runtime}
-      data:
-        range:
-          minimum: 0
-          maximum: 1
---- !u!114 &2608407589129141280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2608407589129141277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_BrainParameters:
-    VectorObservationSize: 10
-    NumStackedVectorObservations: 1
-    m_ActionSpec:
-      m_NumContinuousActions: 4
-      BranchSizes: 
-    VectorActionSize: 04000000
-    VectorActionDescriptions: []
-    VectorActionSpaceType: 1
-    hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
-  m_InferenceDevice: 0
-  m_BehaviorType: 1
-  m_BehaviorName: Goto
-  TeamId: 0
-  m_UseChildSensors: 1
-  m_UseChildActuators: 1
-  m_ObservableAttributeHandling: 0
 --- !u!54 &3091512250480144517 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 2159593282284879384, guid: 84f44ee448c91604aab54adac2d4e4d2, type: 3}

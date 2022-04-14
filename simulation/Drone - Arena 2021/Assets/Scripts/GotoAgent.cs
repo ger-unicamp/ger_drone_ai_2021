@@ -63,9 +63,10 @@ public class GotoAgent : Agent
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         var continuousActionsOut = actionsOut.ContinuousActions;
-        continuousActionsOut[0] = 1;
-        continuousActionsOut[1] = 1;
-        continuousActionsOut[2] = 1;
-        continuousActionsOut[3] = 1;
+        for(int i = 0; i<4; i++)
+        {
+            continuousActionsOut[i] = 0f;
+        }
+        
     }
 }
